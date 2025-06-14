@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Документ</title>
+
+</head>
+
+<body id="my_id">
+
+
+    <div class="modal" id="modal">
+        <div class="modal_cont">
+            <div class="modal_close" onclick="more_information()">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <h1>
+                Подробное информация о выбранном услуге
+            </h1>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="header_container">
+            <!-- <h4 class="header_logo">
+                AlinaTeacher
+            </h4> -->
+            <img src="../Alinka 1.png" style="width: 150px; height: 100px" ; alt="">
+            <div class="header_menu">
+                <a href="#main">
+                    Главная
+                </a>
+
+                <a href="./about">
+                    Обо мне
+                </a>
+
+                <a href="./services">
+                    Услуги
+                </a>
+
+                <a href="./contact">
+                    Контакты
+                </a>
+            </div>
+
+            <div class="burger" id="burger" style="background: green;">
+                <div class="burger_open">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="burger_close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="main_img">
+            <img src="./main.jpg" alt="">
+        </div>
+        <div class="main_img_bg"></div>
+
+        <div class="main_container">
+            <h1>
+                Lorem ipsum dolor sit amet.
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, laboriosam.
+            </p>
+
+            <div class="line_btns">
+                <a href="#" class="line_btn line_btn1">
+                    Записаться
+                </a>
+                <a href="#" class="line_btn line_btn2">
+                    Подробнее
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="my_5_cards" id="about">
+        <div class="my_card">
+            <div class="my_cards_icon">
+                <ion-icon name="diamond"></ion-icon>
+            </div>
+            <div class="my_cards_name">
+                ПОДАРКИ
+            </div>
+        </div>
+
+        <div class="my_card">
+            <div class="my_cards_icon">
+                <ion-icon name="cafe"></ion-icon>
+            </div>
+            <div class="my_cards_name">
+                ПОДДЕРЖКА
+            </div>
+        </div>
+
+        <div class="my_card">
+            <div class="my_cards_icon">
+                <ion-icon name="key"></ion-icon>
+            </div>
+            <div class="my_cards_name">
+                ДОСТУП
+            </div>
+        </div>
+
+        <div class="my_card">
+            <div class="my_cards_icon">
+                <ion-icon name="heart"></ion-icon>
+            </div>
+            <div class="my_cards_name">
+                ЛЮБОВЬ
+            </div>
+        </div>
+
+        <div class="my_card">
+            <div class="my_cards_icon">
+                <ion-icon name="calendar"></ion-icon>
+            </div>
+            <div class="my_cards_name">
+                ГРАФИК
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about_container">
+            <div class="about_card">
+                <h2>
+                    AlinaTeacher
+                </h2>
+                <p>
+                    Опытный и квалифицированный преподаватель английского языка. Я обучаю детей и взрослых, помогаю
+                    развивать
+                    навыки разговорной речи, грамматики и понимания языка.
+                    Использую современные методики, интерактивные задания и индивидуальный подход к каждому ученику.
+                    Моя цель - сделать изучение английского языка эффективным и увлекательным!
+                </p>
+                <p>
+                    Преподаю английский язык с акцентом на грамматику, разговорную речь и понимание тестов. Использую
+                    современные методики
+                    и индивидуальный подход, чтобы обучение было интересным и продуктивным.
+                </p>
+            </div>
+            <div class="about_card">
+                <div class="about_img">
+                    <img src="./about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services" class="services">
+        <h1>Услуги</h1>
+        <div class="services-container">
+
+            <div class="service-box">
+                <h3>Индивидуальные уроки</h3>
+                <p>Получите индивидуальное обучение, адаптированное под ваши личные потребности и цели.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Групповые занятия</h3>
+                <p>Практикуйте и изучайте английский язык в динамичной и поддерживающей групповой среде.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Подготовка к экзаменам</h3>
+                <p>Подготовьтесь к экзаменам, таким как IELTS, TOEFL или Cambridge, под руководством эксперта.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Деловой английский</h3>
+                <p>Изучите язык бизнеса и улучшите свои навыки профессионального общения.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Разговорная практика</h3>
+                <p>Улучшите беглость речи, произношение и уверенность в себе через направленные беседы.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Английский для начинающих</h3>
+                <p>Начните с основ с терпеливыми, структурированными уроками, разработанными для новых учеников.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Английский для детей</h3>
+                <p>Веселые и интерактивные уроки, разработанные для увлечения детей во время обучения.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+            <div class="service-box">
+                <h3>Подготовка к собеседованию</h3>
+                <p>Практикуйте часто задаваемые вопросы и повышайте свою уверенность для собеседований.</p>
+                <div onclick="more_information()">Узнать больше</div>
+            </div>
+
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.1491348947153!2d72.13284037739656!3d40.265607457127594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc73146ae65dfd%3A0x7ef79d530b912272!2sLanguage%20academy!5e1!3m2!1sky!2skg!4v1749637042039!5m2!1sky!2skg"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="teacher-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:alinaakylbekkyzy04@gmail.com">alinaakylbekkyzy04@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+996333574">+ (996) 33-35-74</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Кыргызстан, ул. Примерная, 123</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Меню</h3>
+                <ul class="nav-links">
+                    <li><a href="./about/"><i class="fas fa-user"></i> Обо мне</a></li>
+                    <li><a href="./service/"><i class="fas fa-book-open"></i> Услуги</a></li>
+                    <li><a href="./reviews"><i class="fas fa-star"></i> Отзывы</a></li>
+                    <li><a href="./blog"><i class="fas fa-blog"></i> Блог</a></li>
+                    <li><a href="./contact"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/alinaakylbek9
+                    " target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/L1nkai" target="_blank" aria-label="Telegram"><i
+                            class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/+996553333574" target="_blank" aria-label="WhatsApp">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </div>
+                <p class="subscribe-text">Подпишитесь на обновления!</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Учитель английского языка. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
